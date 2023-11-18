@@ -58,7 +58,7 @@ const getEmployee = async (req, res) => {
         return res.status(204).json({ "message": `No employee matches ID ${req.params.id}.` });
     }
     res.json(employee);
-}
+};
 
 module.exports = {
     getAllEmployees,
