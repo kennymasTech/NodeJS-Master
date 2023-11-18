@@ -9,4 +9,4 @@ const verifyRoles = (...allowedRoles) => {
     }
 };
 
-module.exports = verifyRoles
+module.exports = verifyRoles;
