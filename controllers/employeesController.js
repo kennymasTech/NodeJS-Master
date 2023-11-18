@@ -48,7 +48,7 @@ const deleteEmployee = async (req, res) => {
     }
     const result = await employee.deleteOne(); //{ _id: req.body.id }
     res.json(result);
-}
+};
 
 const getEmployee = async (req, res) => {
     if (!req?.params?.id) return res.status(400).json({ 'message': 'Employee ID required.' });
