@@ -19,7 +19,7 @@ const logEvents = async (message, logName) => {
     } catch (err) {
         console.log(err);
     }
-}
+};
 
 const logger = (req, res, next) => {
     logEvents(`${req.method}\t${req.headers.origin}\t${req.url}`, 'reqLog.txt');
