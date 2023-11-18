@@ -22,7 +22,7 @@ const createNewEmployee = async (req, res) => {
     } catch (err) {
         console.error(err);
     }
-}
+};
 
 const updateEmployee = async (req, res) => {
     if (!req?.body?.id) {
