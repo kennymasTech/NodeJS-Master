@@ -15,7 +15,7 @@ const deleteUser = async (req, res) => {
     }
     const result = await user.deleteOne({ _id: req.body.id });
     res.json(result);
-}
+};
 
 const getUser = async (req, res) => {
     if (!req?.params?.id) return res.status(400).json({ "message": 'User ID required' });
@@ -24,7 +24,7 @@ const getUser = async (req, res) => {
         return res.status(204).json({ 'message': `User ID ${req.params.id} not found` });
     }
     res.json(user);
-}
+};
 
 module.exports = {
     getAllUsers,
