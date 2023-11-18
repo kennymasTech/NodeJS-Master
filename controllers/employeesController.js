@@ -37,7 +37,7 @@ const updateEmployee = async (req, res) => {
     if (req.body?.lastname) employee.lastname = req.body.lastname;
     const result = await employee.save();
     res.json(result);
-}
+};
 
 const deleteEmployee = async (req, res) => {
     if (!req?.body?.id) return res.status(400).json({ 'message': 'Employee ID required.' });
